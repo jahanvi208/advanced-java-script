@@ -1,4 +1,5 @@
-//call back
+//call back : when u pass the function as an argument.
+//it is a function that takes another function as an argument, which then called when rest of the initial function has finished 
 // function dosomething(callback) {
 //     callback();
 // }
@@ -102,3 +103,47 @@
     
 // })
 
+
+// function dosomething(callback) {
+//     callback();
+// }
+// function sayHi() {
+//     console.log("hi");
+
+// }
+// dosomething(sayHi);
+
+//async and await
+//we can onli use async n await, with async keyword we can make a function return a promise
+// function saySomething(x){
+//     return new Promise(resolve => {
+//         setTimeout(()=> {
+//             resolve("something"+x);
+//         },2000);
+//     });
+// }
+// async function talk(x) {
+//     const words = saySomething(x);
+//     console.log(words);
+    
+// }
+// talk(2);
+// talk(4);
+// talk(8);
+
+//event loop: js is a single threaded lang. a thread in this is path of execution
+// call stack n call back queue
+
+// console.log("hi there");
+// addEventListener(4,5);
+
+// function add (x,y){
+//     return x+y;
+// }
+
+// console.log("hi there");
+// setTimeout(() => console.log("sorry im late"),1000);
+// console.log(add(4,5));
+// function add(x,y){
+//     return x - y;
+// }
